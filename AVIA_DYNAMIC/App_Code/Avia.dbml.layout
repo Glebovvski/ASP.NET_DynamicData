@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="Avia">
+  <DataContextMoniker Name="/AviaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fbc956c8-4f07-47cf-82e5-0a9b941eab07" absoluteBounds="0.75, 3.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AviaDataContext/Airport" />
+      <nestedChildShapes>
+        <elementListCompartment Id="743e29de-c80d-4556-9186-268d4ac82ef2" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3392e7db-5c0f-44e2-9486-edc369f8761e" absoluteBounds="9, 1.125, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/AviaDataContext/Ticket" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75b9d0e1-6b53-4e6a-960f-f85e04839ba0" absoluteBounds="9.015, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40475354-5858-47f1-8396-05bb9c77289b" absoluteBounds="0.75, 1.25, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/AviaDataContext/Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0531074c-22d8-4e04-a88e-471fe04f0e61" absoluteBounds="0.765, 1.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f6495b5-44f1-4a7d-9fae-3974202d5e6c" absoluteBounds="6.25, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/AviaDataContext/Flight" />
+      <nestedChildShapes>
+        <elementListCompartment Id="49b463bf-ea3b-413b-bff6-5da11ca2b478" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b9ec5c55-3050-4e90-9d1a-10c11abded2b" absoluteBounds="3.5, 0.875, 2, 1.7708968098958333">
+      <DataClassMoniker Name="/AviaDataContext/Plane" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10e810de-f01d-4bec-95a6-46cc987a0270" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 1.81814697265625); (9 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AviaDataContext/Flight/Flight_Ticket" />
+      <nodes>
+        <classShapeMoniker Id="6f6495b5-44f1-4a7d-9fae-3974202d5e6c" />
+        <classShapeMoniker Id="3392e7db-5c0f-44e2-9486-edc369f8761e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.76044840494792); (6.25 : 1.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AviaDataContext/Plane/Plane_Flight" />
+      <nodes>
+        <classShapeMoniker Id="b9ec5c55-3050-4e90-9d1a-10c11abded2b" />
+        <classShapeMoniker Id="6f6495b5-44f1-4a7d-9fae-3974202d5e6c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AviaDataContext/Company/Company_Plane" />
+      <nodes>
+        <classShapeMoniker Id="40475354-5858-47f1-8396-05bb9c77289b" />
+        <classShapeMoniker Id="b9ec5c55-3050-4e90-9d1a-10c11abded2b" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

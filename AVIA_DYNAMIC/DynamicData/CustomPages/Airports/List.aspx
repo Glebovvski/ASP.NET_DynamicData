@@ -30,9 +30,8 @@
                 <br />
             </div>
 
-            <asp:GridView ID="GridView1" runat="server" DataSourceID="GridDataSource" EnablePersistedSelection="true"
-                AllowPaging="True" AllowSorting="True" CssClass="DDGridView"
-                RowStyle-CssClass="td" HeaderStyle-CssClass="th" CellPadding="3" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellSpacing="1" GridLines="None">
+            <asp:GridView ID="GridView1" runat="server" DataSourceID="GridDataSource" EnablePersistedSelection="true" AllowSorting="True" CssClass="DDGridView"
+                RowStyle-CssClass="td" HeaderStyle-CssClass="th" CellPadding="4" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px">
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>
@@ -42,25 +41,25 @@
                     </asp:TemplateField>
                 </Columns>
 
-                <FooterStyle BackColor="#C6C3C6" ForeColor="Black"></FooterStyle>
+                <FooterStyle BackColor="#99CCCC" ForeColor="#003399"></FooterStyle>
 
-                <HeaderStyle BackColor="#4A3C8C" CssClass="th" Font-Bold="True" ForeColor="#E7E7FF"></HeaderStyle>
+                <HeaderStyle BackColor="#003399" CssClass="th" Font-Bold="True" ForeColor="#CCCCFF"></HeaderStyle>
 
-                <PagerStyle CssClass="DDFooter" BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
+                <PagerStyle CssClass="DDFooter" BackColor="#99CCCC" ForeColor="#003399" HorizontalAlign="Left" />
                 <PagerTemplate>
                     <asp:GridViewPager runat="server" />
                 </PagerTemplate>
-                <RowStyle BackColor="#DEDFDE" CssClass="td" ForeColor="Black"></RowStyle>
+                <RowStyle BackColor="White" CssClass="td" ForeColor="#003399"></RowStyle>
 
-                <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White"></SelectedRowStyle>
+                <SelectedRowStyle BackColor="#009999" Font-Bold="True" ForeColor="#CCFF99"></SelectedRowStyle>
 
-                <SortedAscendingCellStyle BackColor="#F1F1F1"></SortedAscendingCellStyle>
+                <SortedAscendingCellStyle BackColor="#EDF6F6"></SortedAscendingCellStyle>
 
-                <SortedAscendingHeaderStyle BackColor="#594B9C"></SortedAscendingHeaderStyle>
+                <SortedAscendingHeaderStyle BackColor="#0D4AC4"></SortedAscendingHeaderStyle>
 
-                <SortedDescendingCellStyle BackColor="#CAC9C9"></SortedDescendingCellStyle>
+                <SortedDescendingCellStyle BackColor="#D6DFDF"></SortedDescendingCellStyle>
 
-                <SortedDescendingHeaderStyle BackColor="#33276A"></SortedDescendingHeaderStyle>
+                <SortedDescendingHeaderStyle BackColor="#002876"></SortedDescendingHeaderStyle>
                 <EmptyDataTemplate>
                     There are currently no items in this table.
                 </EmptyDataTemplate>
